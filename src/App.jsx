@@ -1,4 +1,7 @@
 import React from "react"
+import UserContextProvider from "./context/UserConetextProvider"
+import Login from "./components/Login"
+import Profile from "./components/Profile"
 //hum log Context Api isliye use karte hai kyuki
 //agar hum logo ke pass doosre component se data aara hai
 //to hum log props ke through usko leke change karte hai
@@ -9,8 +12,10 @@ import React from "react"
 function App() {
 
   return (
-    <>
-    </>
+    <UserContextProvider>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
   )
 }
 
