@@ -4,9 +4,9 @@ function Login(){
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const {setUser}=useContext(UserContext)
-    const handleSubmit=()=>{
+    const handleSubmit=(e)=>{
       e.preventDefault()//by default value url ke through kahi na khi chali jaati hai usko bachane ke liye
-      setUser({username},{password})
+      setUser({username,password})
     }
   return (
     <div>
